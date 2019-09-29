@@ -1,0 +1,40 @@
+#number{
+    margin: 50px auto 0;
+    background: #fff;
+    width: 400px;
+    height: 250px;
+    font-size: 180px;
+    line-height: 250px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+button{
+    margin: 30px auto;
+    width: 300px;
+    height: 80px;
+    background: #ffdc15;
+    color: #fff;
+    font-size: 50px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+}
+#number2{
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#number2 li{
+    margin: 0 10px 10px 0;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    list-style: none;
+}
