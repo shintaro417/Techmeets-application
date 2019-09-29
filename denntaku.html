@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>電卓</title>
+  <script  src="dentaku.js"></script>  
+  <link rel="stylesheet" type="text/css" href="dentaku.css">
+</head>
+<body>
+<!-- 数字を文字列して扱う、jsの方で文字列を式として評価して答えを弾き出す -->
+<form name="form" id="calcForm"><!-- 入力フォームを表す　入力フォームの名前はname-->
+    <table id="calcTable"><!-- 表を作成する -->
+        <tr>
+            <td colspan="3"><input type="text" name="text" value=""></td><!-- tdは表のデータセル　colspanは列の数　textは１行テキストボックスを作成する。　 -->
+            <td><input type="button" value="C" onclick="calc('C')"></td><!-- inputは入力フォームの各部品を作成する　buttonは汎用的なボタン onclickはクリックした時の処理を指定する -->
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="calc('7')"></td><!-- ７と表示されているボタンを作って、クリックされたら引数７が渡された関数calcを発動する -->
+            <td><input type="button" value="8" onclick="calc('8')"></td>
+            <td><input type="button" value="9" onclick="calc('9')"></td>
+            <td><input type="button" value="/" onclick="calc('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="calc('4')"></td>
+            <td><input type="button" value="5" onclick="calc('5')"></td>
+            <td><input type="button" value="6" onclick="calc('6')"></td>
+            <td><input type="button" value="*" onclick="calc('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="calc('1')"></td>
+            <td><input type="button" value="2" onclick="calc('2')"></td>
+            <td><input type="button" value="3" onclick="calc('3')"></td>
+            <td><input type="button" value="-" onclick="calc('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="calc('0')"></td>
+            <td><input type="button" value="." onclick="calc('.')"></td>
+            <td><input type="button" value="+" onclick="calc('+')"></td>
+            <td><input type="button" value="=" onclick="calc('=')"></td>
+        </tr>
+    </table>
+    </form> 
+    
+</body>
+</html>
