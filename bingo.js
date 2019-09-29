@@ -4,12 +4,12 @@ var shuffleId;//setInterval用の変数
 var nums = [];//ビンゴ用の番号を格納する配列
 
 for(i = 1; i <= 20; i++){//1~20までの番号を配列に追加
-    nums.push(i);
+    nums.push(i);//配列numsに数値データを追加する。
 }
 
 //配列の中身をランダムに並び替え
-var narabikae = function(){return Math.random()-.5};
-nums.sort(narabikae);
+var sorted = function(){return Math.random()-.5};//Mathオブジェクトのrandom()メソッド:0から1未満の数字を出す
+nums.sort(sorted);//
 
 //配列から値を取り出して#numに表示
 function bingo(){
