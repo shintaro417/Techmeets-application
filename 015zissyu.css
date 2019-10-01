@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 50px;
+}
+
+#fade {
+    float: right;
+    padding: 10px 30px;
+    background-color: yellow;
+    color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
